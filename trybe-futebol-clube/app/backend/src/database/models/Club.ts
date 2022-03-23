@@ -1,0 +1,35 @@
+import { Model, DataTypes } from 'sequelize';
+import db from '.';
+import Match from './Match';
+
+class Club extends Model {
+  id: number;
+
+  clubName: string;
+}
+
+Club.init({
+  id: {
+    type: DataTypes.INTEGER,
+    allowNull: false,
+    autoIncrement: true,
+    primaryKey: true,
+  },
+  clubName: {
+    type: DataTypes.STRING,
+    allowNull: false,
+    field: 'club_name',
+  },
+}, {
+  sequelize: db,
+  modelName: 'Club',
+  tableName: 'clubs',
+  timestamps: false,
+});
+
+Club.hasMany(Match, { foreignKey: 'id', as: 'homeMatchs' });
+Club.hasMany(Match, { foreignKey: 'id', as: 'awayMatchs' });
+Match.belongsTo(Club, { foreignKey: 'homeTeam', as: 'homeClub' });
+Match.belongsTo(Club, { foreignKey: 'awayTeam', as: 'awayClub' });
+
+export default Club;
