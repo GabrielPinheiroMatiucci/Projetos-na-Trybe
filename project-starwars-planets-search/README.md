@@ -1,6 +1,6 @@
 # Star Wars Planets
 
-## Comandos para iniciar o projeto
+### Comandos para iniciar o projeto
 
 ### npm install
 
