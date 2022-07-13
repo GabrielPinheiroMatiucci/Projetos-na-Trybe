@@ -1,6 +1,6 @@
 # Trybe is not Google
 
-# Contexto
+## Contexto
 ### Este projeto trata de desenvolver um software que imite uma criação de fila contendo arquivos .txt e uma busca por palavras neles.
 
 ## Tecnologias usadas
