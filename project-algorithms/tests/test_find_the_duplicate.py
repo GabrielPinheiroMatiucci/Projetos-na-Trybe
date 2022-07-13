@@ -5,3 +5,9 @@ def test_lista_vazia():
     nums = []
 
     assert find_duplicate(nums) is False
+
+
+def test_lista_strings():
+    nums = ['z', 'a', 'h']
+
+    assert find_duplicate(nums) is False
