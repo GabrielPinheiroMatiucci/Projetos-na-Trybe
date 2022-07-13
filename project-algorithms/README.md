@@ -1,6 +1,6 @@
 # Algorithms
 
-# Contexto
+## Contexto
 ### Este projeto trata de desenvolver algoritmos de programação.
 
 ## Tecnologias usadas
