@@ -45,7 +45,7 @@ def find_duplicate(nums: list):
 
     nums = quicksort(nums)
 
-    for index in range(1, len_nums - 1):
+    for index in range(1, len_nums):
         if (validate_num(nums[index]) is False):
             return False
         else:
