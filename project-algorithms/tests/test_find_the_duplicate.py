@@ -17,3 +17,9 @@ def test_lista_sem_repeticao():
     nums = [1, 2, 3, 4]
 
     assert find_duplicate(nums) is False
+
+
+def test_lista_com_um_elemento():
+    nums = [1]
+
+    assert find_duplicate(nums) is False
