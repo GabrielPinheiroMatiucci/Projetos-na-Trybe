@@ -23,3 +23,9 @@ def test_lista_com_um_elemento():
     nums = [1]
 
     assert find_duplicate(nums) is False
+
+
+def test_lista_com_elementos_negativos():
+    nums = [3, -1, 2]
+
+    assert find_duplicate(nums) is False
