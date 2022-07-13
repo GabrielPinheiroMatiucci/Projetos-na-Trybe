@@ -33,10 +33,10 @@ def test_lista_com_elementos_negativos():
 
 def test_listas_elementos_duplicados():
     nums = [1, 2, 3, 1]
-    assert find_duplicate(nums) is 1
+    assert find_duplicate(nums) == 1
 
     nums = [1, 4, 5, 6, 10, 5]
-    assert find_duplicate(nums) is 5
+    assert find_duplicate(nums) == 5
 
     nums = [3, 3, 2, 1]
-    assert find_duplicate(nums) is 3
+    assert find_duplicate(nums) == 3
