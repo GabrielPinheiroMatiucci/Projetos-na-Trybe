@@ -21,7 +21,7 @@ def test_dequeue():
 
     queue.enqueue(txt_importer(phrases_path))
     queue.enqueue(txt_importer(phrases_path))
-    
+
     queue.dequeue()
     assert len(queue._queue) == 1
 
