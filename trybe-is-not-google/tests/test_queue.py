@@ -13,3 +13,16 @@ def test_enqueue():
 
     queue.enqueue(txt_importer(phrases_path))
     assert len(queue._queue) == 2
+
+
+def test_dequeue():
+    queue = Queue()
+
+    queue.enqueue(txt_importer(phrases_path))
+    queue.enqueue(txt_importer(phrases_path))
+    
+    queue.dequeue()
+    assert len(queue._queue) == 1
+
+    queue.dequeue()
+    assert len(queue._queue) == 0
