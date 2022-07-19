@@ -1,7 +1,7 @@
 # Restaurant Orders
 
 ## Contexto
-### Este projeto trata de desenvolver um software que leia arquivos .csv contendo os pedidos do restaurante e cria um arquivo .txt e uma classe que gera algumas análises a partir dos pedidos.
+### Este projeto trata de desenvolver um software que leia arquivos .csv contendo os pedidos do restaurante e depois cria um arquivo .txt com algumas informações desejadas e também cria uma classe que gera algumas análises a partir dos pedidos.
 
 ## Tecnologias usadas
 
